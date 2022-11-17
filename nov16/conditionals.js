@@ -176,13 +176,3 @@ message = 'legends'
 }
 
 console.log(message)
-
-
-if (hour < 12) {
-console.log('good morning')
-}else if (hour<20){
-console.log('good day')
-}else {
-console.log('good evening')
-
-} 
