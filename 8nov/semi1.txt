@@ -1,1 +1,118 @@
-Today Pakistan beat New Zeland & reched to the final.
+# input - take value form the user at real time.
+
+# day = input("What is your favorite DAY - ")
+
+#stockPrice = input ("Enter price (500 - 1000) = ")
+# print(stockprice + 1000)
+
+
+# Typecast the value to work with some other operatioms.
+
+
+day  = ("What is your favorite DAY - ")
+print(day,type(day))
+
+#It gives output.
+What is your favorite DAY - <class 'str'>
+
+a = 100
+b = str(a)
+print(a, type(a))
+print(b, type(b))
+
+#output of those upper cases is.
+
+100 <class'int'>
+100 <class'str'>
+
+c = float(a)
+print(c, type(c))
+
+#output of upper data.
+100.0<class'float'>
+
+num1 = 14.25
+print(num1, type(num1))
+
+num2 = int(num1)
+print(num2, type(num2))
+
+#output by upper variables is
+
+14.25 <class 'float'>
+14 <class 'int'>
+
+str_1 = str(num1)      # "14.25"
+print(str_1, type(str_1))
+
+#output by upper variables is
+
+14.25 <class 'str'>
+
+
+#Integer values of the boolans.
+
+p1 = 1
+print(p1, type(p1))
+
+
+p2 = false
+print(p2, type(p2))
+
+#the output of upper variables 
+
+1 <class 'int'>
+False <class 'bool'>
+
+
+q1 = int(True)
+print(q1, type(q1))
+
+
+q2 = int(True)
+print(q2, type(q2))
+
+
+#the output of upper variables
+
+1 <class 'int'>
+0 <class 'int'>
+
+
+r1 = bool(1)
+r2 = bool(0)
+
+print(r1, type(r1))
+print(r2, type(r2))
+
+#the output of upper variables
+
+True <class 'bool'>
+False <class 'bool'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
