@@ -1,1 +1,9 @@
-hello thus is myself s
+10 + 2
+#Run shortcut = ctrl + f5
+print(10 + 2)
+#output is 12 by the upper input.
+#Python console - Script window.
+#On the right side it is an output screen.
+#Print("") is the place that here you give input & then on the right side output is shown.
+print("hello world")
+#Output shows hello world.
