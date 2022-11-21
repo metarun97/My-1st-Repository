@@ -1,1 +1,212 @@
-day 2 is here.
+let hour = 10
+if(hour < 12){
+console.log('Good morning')        # Output is "Good morning"
+}
+
+
+let hour = 13
+if(hour < 12){
+console.log('Good morning')        # Output is  >_ False      
+}
+
+
+let hour = 13
+if(hour < 12){
+console.log('Good morning')
+}else{
+console.log('Good afternoon')      # Output is "Good afternoon"
+}
+
+
+let hour = 12
+if(hour <12){
+console.log('Good morning')
+}else if(hour <20){
+console.log('good day')                     
+}else{
+console.log('good evening')         # Output is "good day "
+}
+
+
+let hour = 22
+if(hour <12){
+console.log('Good morning')
+}else if(hour <20){
+console.log('Good day')
+}else{
+console.log('Good evening')        # Output is "Good evening"
+}
+
+
+let currentyear = 2022
+if(currentyear == 2022){
+console.log('you are so smart')    # Output is "you are so smart"
+}
+
+
+
+let currentyear = 2021
+if(currentyear == 2022){
+console.log('you are so smart')    # Output is >_ False
+}
+
+
+let currentyear = 2023
+if(currentyear == 2022){
+console.log('you are so smart')
+}else{
+console.log('you are wrong')       # Output is "you are wrong"
+}
+
+
+let accessAllowed;
+let age = 16
+if(age >18){
+accessAllowed = true
+}else{
+accessAllowed = false
+}
+console.log(accessAllowed)         # Output is false
+
+
+
+let accessAllowed;
+let age = 19
+if(age >18){
+accessAllowed = true
+}else{
+accessAllowed = false
+}
+console.log(accessAllowed)         # Output is true
+
+
+
+let age = 19
+let accessAllowed = (age >18) ? true : false           # Output is true
+console.log(accessAllowed)
+
+
+let age = 16
+let accessAllowed = (age >18) ? true : false           # Output is false
+console.log(accessAllowed)
+
+
+
+let age = 10
+let message = (age <3) ? 'Hey small kid':
+(age <18) ? 'hey kid': (age <100) ? 'greetings':       # Output is "Hey kid"
+'legends'
+
+console.log(message)
+
+
+let age = 2
+let message = (age <3) ? 'Hey small kid':
+(age <18) ? 'hey kid': (age <100) ? 'greetings':       # Output is "Hey small kid"
+'legends'
+
+console.log(message)
+
+
+let age = 200
+let message = (age <3) ? 'Hey small kid':
+(age <18) ? 'hey kid': (age <100) ? 'greetings':       # Output is "Legends"
+'legends'
+
+console.log(message)
+
+
+
+let age = 200
+let message
+
+if(age <3){
+message = 'Hey small kid'
+}else if(age <3){
+message = 'Hey kid'
+}else if(age <100){
+message = 'Greeetings'              # Output is "Legends"
+}else{
+message = 'Legends'
+}
+console.log(message)
+
+
+let age = 2
+let message
+
+if(age <3){
+message = 'Hey small kid'
+}else if(age <3){
+message = 'Hey kid'
+}else if(age <100){
+message = 'Greeetings'              # Output is "Hey small kid"
+}else{
+message = 'Legends'
+}
+console.log(message)
+
+
+
+let age = 80
+let message
+
+if(age <3){
+message = 'Hey small kid'
+}else if(age <3){
+message = 'Hey kid'
+}else if(age <100){
+message = 'Greeetings'               # Output is "Greetings"
+}else{
+message = 'Legends'
+}
+console.log(message)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
