@@ -70,7 +70,8 @@ print("salary = ", salary)                        # salary =  500.0
 salary = float(input("what is your salary: "))    # what is your salary: 500
 print("salary = ", salary + 100)                  # salary =  600.0
 
-
+age = int(input("write AGE =" ))                  # write AGE = 23
+print("AGE = ",age ,type(age))                    # AGE = 23 <class'int'>
 
 
 
