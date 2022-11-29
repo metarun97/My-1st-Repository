@@ -94,6 +94,24 @@ console.log('hy there')                 // hi there
 }
 
 
+if(false)                              
+console.log('Hello world')
+console.log('Hi there')                 // Hi there
+
+
+if(false){                              // No output is shown
+console.log('Hello world')              
+console.log('Hi there')
+}
+
+
+if(true){
+    console.log('Hello world') ; console.log('Hi there')       // Hello world // Hi there
+    }
+
+
+
+
 
 
 
