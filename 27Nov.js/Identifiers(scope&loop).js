@@ -110,7 +110,41 @@ if(true){
     }
 
 
+// do while loop
 
+
+let i = 0
+do{
+    console.log(i);                               // 0  1 2 3 4
+    i++;
+}while(i<5)
+  
+// ; is for end for our statement inupper case.
+
+let x = 0
+do{
+    console.log(x);                               // 0 1 2 3 4
+    x++;
+}while(x<5)
+
+
+// If we compare do while & while loop then same output will come.
+
+let i = 0
+do{
+    console.log('the value of i',i);
+    i++;
+}while(i>5)
+  
+
+
+let x = 0
+while(x>5){
+    console.log('the value of x',x)                    
+    x++
+    }
+
+// In the upper case the value of i 0 is output.
 
 
 
