@@ -147,6 +147,98 @@ while(x>5){
 // In the upper case the value of i 0 is output.
 
 
+// For loop:-
+
+for(let i =0; i <= 5; i = i + 1){                                // 0 1 2 3 4
+    console.log(i)
+}
+
+for(let i =1; i < 5; i = i + 1){                                 // 1 2 3 4
+    console.log(i)
+}
+
+
+for(let i =1; i <= 5; i = i + 1){                                // 1 2 3 4 5
+    console.log(i)
+}
+
+  
+// skip some part of the loop:-
+
+
+// let i = 0;
+for(; i <5;i++){                                                  // 0 1 2 3 4
+    console.log(i)
+}
+
+// let i = 0;
+for(; i<5 ;){                                                     // 0 1 2 3 4
+    console.log(i++)
+}
+
+
+// Break the loop:-
+
+let value = 1
+let sum = 0
+while(value<5){
+    sum = sum + value                                            // 10
+    value++
+}
+console.log(sum)
+
+// let value = 1
+// let sum = 0
+while(value<5){                                                
+    if(sum == 6){
+        break                                                    // 6
+    }
+    sum = sum + value
+    value++
+}
+console.log(sum)
+
+
+for(let i = 0 ; i < 10 ; i++){
+    if(i % 2 == 0){
+        continue
+    }                                                            // 1 3 5 7 9
+    console.log(i)
+    }
+
+
+
+
+for(let i = 0 ; i < 10 ; i++){
+    if(i == 2) continue                                       // 0 1 3 4 5 6 7 8 9            
+        console.log(i)
+        }
+
+
+
+
+ for(let i = 0 ; i < 10 ; i++){
+    if(i == 2) continue  
+    if(i == 3) continue                                      // 0 1 4 5 6 7 8 9            
+            console.log(i)
+            }
+    
+
+ for(let i = 0 ; i < 10 ; i++){
+    if(i == 2 || i == 3) continue                            // 0 1 4 5 6 7 8 9 
+     console.log(i)
+         }
+            
+
+
+
+
+
+
+
+
+
+
 
 
 
