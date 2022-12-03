@@ -167,6 +167,15 @@ function getSum(a,b){
         console.log('hello world')
 
 
+// How Java Script works-:
+
+// 1- It makes Exicution context(EC):-
+
+// Everything in (JS) happens inside (EC).
+// JS runs in two phases=> 
+// (a-) Memory Component
+// (b-) Code exicution Component
+
 
 
 
