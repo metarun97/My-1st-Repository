@@ -47,6 +47,83 @@ console.log(str[0])                                  // H
 
 
 
+console.log(str[5])                               // Undefined
+
+// console.log(str.at())                           syntax
+
+// let str = 'Hello';
+console.log(str.at(0))                            // H
+
+
+// For last element:-
+
+// let str = 'hello';
+console.log(str.at(-1))                            // o
+
+// let str = 'hello';
+console.log(str.at(-2))                            // l
+
+// let str = 'hello';
+console.log(str.at(-2))                            // undefined
+
+// let str = 'Hello';
+console.log(str[str.length-1])                     // o
+
+
+// For of loop:-
+// Itterate over araay or string or object:-
+
+// let str = 'javascript'
+for(let i = 0; i < str.length; i++){              // j,a,v,a,s,c,r,i,p,t
+    console.log(str[i])
+}
+
+// let str = 'javascript'
+for(let i = 0; i < str.length; i++){              // 0,1,2,3,4,5,6,7,8,9
+    console.log(i)
+}
+
+
+// let str = 'javascript'
+for(let i = 0; i < str.length-1; i++){            // 0,1,2,3,4,5,6,7,8
+          console.log(i)
+}
+
+// let str = 'javascript'
+for(let i = 0; i <= str.length-1; i++){           // 0,1,2,3,4,5,6,7,8,9
+console.log(i)
+}
+
+
+// let str = 'javascript'
+for(let i = 0; i <= str.length-1; i++){           // j,a,v,a,s,c,r,i,p,t
+console.log(str[i])
+}
+
+
+// let str = 'javascript'
+for(let i = 0; i <= str.length-1; i++){
+    if(str[i] == 'v') continue                    // j,a,a,s,c,r,i,p,t
+console.log(str[i])
+}
+
+
+// Better way for off loop:-
+
+// let str = 'javascript'
+for(let char of str){
+    console.log(char)                             // j,a,v,a,s,c,r,i,p,t
+}
+
+// let str = 'javascript'
+for(let char of str){
+    if(char == 'v') continue                     
+    console.log(char)                             // j,a,a,s,c,r,i,p,t
+}
+
+
+
+
 
 
 
