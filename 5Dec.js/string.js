@@ -167,6 +167,50 @@ console.log(str.slice(3))                        // ascript
 // Note=> If no second argument will given so go till last.
 
 
+let str = 'javascript'
+// Negative index is also allowed
+console.log(str.slice(-1))                       // t
+
+
+let str = 'javascript'
+console.log(str.slice(-2))                       // pt
+
+let str = 'javascript'
+console.log(str.slice(-4,-1))                    // rip
+
+// str.substr(start,length0)
+
+let str = 'javascript'
+console.log(str.substr(2,4))                     // vasc
+
+let str = 'javascript'
+console.log(str.substr(-4,-1))                   // emptystring
+
+// str.substring(start,end) but not including end
+
+let str = 'javascript'
+console.log(str.substring(2,6))                  // vasc
+
+let str = 'javascript'
+console.log(str.substring(6,2))                  // vasc 
+
+// Start value is greater it just swaps or interchange 
+// It method not give some output as same as substring.
+
+let str = 'javascript'
+console.log(str.slice(2,6))                      // vasc
+
+let str = 'javascript'
+console.log(str.substring(-4,-1))                // emptystring
+
+let str = 'javascript'
+console.log(str.substr(-4,2))                    // ri
+
+// Note=> Use only slice method for it.
+
+
+
+
 
 
 
