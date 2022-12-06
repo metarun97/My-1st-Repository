@@ -122,6 +122,53 @@ for(let char of str){
 }
 
 
+// Strings are Immutable:-
+// let str = 'abc'
+str[0] = 'h'                                     // abc
+str
+
+// Value isn't change then strings are immutable.
+let str = 'abc'
+str = 'h' + str[1] + str[2]                      // hbc
+str
+
+let str = 'abc'
+console.log(str.toUpperCase())                   // ABC
+                                 
+let str = 'Abc'
+console.log(str.toLowerCase())                   // abc
+
+let str = 'abc'
+console.log(str[0].toLowerCase())                // a
+
+let str = 'hello'
+// Part of strings
+// str.indexOf                                (Syntax)
+
+console.log(str.indexOf('h'))                    // 0
+
+let str = 'I am learning js'
+console.log(str.indexOf('I'))                    // 0
+
+let str = 'I am learning js'
+console.log(str.indexOf('am'))                   // 2
+
+let str = 'I am learning js'
+console.log(str.indexOf('z'))                    // -1
+
+let str = 'javascript'
+// slice method
+//srt.slice(start,end) but not including end.    // javas
+console.log(str.slice(0,5)) 
+
+let str = 'javascript'
+console.log(str.slice(3))                        // ascript
+
+// Note=> If no second argument will given so go till last.
+
+
+
+
 
 
 
