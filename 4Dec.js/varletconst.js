@@ -63,3 +63,66 @@ function x(){
     console.log(a)
 
 
+ function x(){
+        function y(){
+            function z(){
+                const a = 20 // It's scope is limited.
+            }                                                 // a is not defined(error)
+            z()                              
+        }
+       y()
+       console.log(a)
+    }
+    x()
+
+
+    var b = 200
+    function x(){
+        function y(){
+            function z(){
+                const a = 20 // It's scope is limited.
+                console.log(b)                               // 200
+            }
+            z()                              
+        }
+       y()
+    }
+    x()
+   
+
+    function x(){
+        var b = 200
+        function y(){
+            function z(){
+                const a = 20 // It's scope is limited.
+                console.log(b)                              // 200
+            }
+            z()                              
+        }
+       y()
+    }
+    x()
+
+    // Note=> Because of it is the lexical scope then it gives output.
+
+    function x(){
+        function y(){
+            function z(){
+                const a = 20 // It's scope is limited.
+                console.log(b)
+            }
+            z()                                            // undefined
+        }
+       y()
+    }
+    x()
+    var b = 200
+
+// It is called as lexical chaining.
+
+
+
+
+
+
+
