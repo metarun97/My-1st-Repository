@@ -121,6 +121,53 @@ function x(){
 // It is called as lexical chaining.
 
 
+// Hoisting is a phenominan where can get the value of function,classes,variables even,before executing the code.
+
+    console.log(a)                                         // undefined
+    var a = 100                
+
+    console.log(a)                                     
+    let a = 100                                           //  ReferenceError: Cannot access 'a' before initialization
+
+
+    console.log(a)                                     
+    const a = 100                                        //  ReferenceError: Cannot access 'a' before initialization
+
+    b()
+    function b(){                                        // It is also hoisted
+        
+    }                                       
+
+// Note=> The time from which you can't use a variable declare by let let or const till the time it is initialized.
+
+
+// {} curly brackets:- When someone ask you that  what is the say that curly brackets.
+
+// Var is a function scope where as let and const are blocked scope.
+
+
+var a = 10
+{
+    var a = 20
+    console.log(a)                                       // 20
+}
+
+let a = 10
+{
+    let a = 20                                           // 10
+}
+console.log(a)
+
+
+var a = 100
+function x(){                                            // 200
+    var a = 200
+    console.log(a)
+}
+x()
+
+
+
 
 
 
