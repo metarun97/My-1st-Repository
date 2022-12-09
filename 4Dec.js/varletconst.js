@@ -167,7 +167,9 @@ function x(){                                            // 200
 x()
 
 
-
+ const a = 10
+a = 20
+console.log(a)                                           // TypeError: Assignment to constant variable.
 
 
 
