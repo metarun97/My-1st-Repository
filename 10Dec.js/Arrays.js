@@ -1,0 +1,1 @@
+// In JS everything is an object => Null 
