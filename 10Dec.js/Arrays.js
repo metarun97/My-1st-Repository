@@ -69,3 +69,13 @@ nums                                                                   // [ 10, 
 // let nums = [10,20,30,40,50]
 nums.pop()
 nums                                                                   // [ 10 ,20, 30, 40 ]
+
+
+// It pops(means remove) the last element one by one when we pop again and again.
+
+// let nums = [10,20,30,40,50]
+nums                                                                   // [ 10 ,20 ,30 ,40 ,50 ]
+nums.shift()
+nums                                                                   // [ 20 ,30 ,40 ,50 ]
+nums.unshift(120)
+nums                                                                   // [ 120 ,20 ,30 ,40 ,50 ]
