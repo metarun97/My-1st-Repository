@@ -156,3 +156,94 @@ let nums = [10,20,30,40,50]
 nums.slice(1,3)
 nums                                                                  // 10, 20, 30, 40, 50
 
+
+let nums = [10,20,30,40,50]
+newArray = nums.slice(1,3)
+newArray                                                              // [ 20, 30 ]
+
+// Iterate 
+// higher order function 
+
+let nums = [10,20,30,40,50]
+nums.forEach(function(item, index, array){
+    item                                                             // 10, 20, 30, 40, 50
+    index                                                            // 0, 1, 2, 3, 4
+    array                                                            // [ 10, 20, 30, 40, 50 ] [ 10, 20, 30, 40, 50 ] [ 10, 20, 30, 40, 50 ]
+})  
+
+//Note:- It loops many time array so it is so many.
+
+let nums = [10,20,30,40,50]
+let a =  nums.forEach(function(item, index, array){
+let newArray = []
+newArray.push(item*2)
+return newArray
+})
+a                                                                    // undefined
+
+let nums = [10,20,30,40,50]
+let newArray = []
+let a =  nums.forEach(function(item, index, array){
+newArray.push(item*2)
+return newArray
+})
+newArray                                                             // [ 20, 40, 60, 80, 100 ]
+
+// Map, Filter,Reduce:-
+// Map to transform a given array
+
+let nums = [10,20,30,40,50]
+let numsMultiplyByTwo = nums.map(function(item,index){
+return item * 2
+})
+numsMultiplyByTwo                                                    // [ 20, 40, 60, 80, 100 ]
+
+let x = () =>{
+    console.log('hello world')
+}
+x()                                                                  // hello world
+
+nums = [10,20,30,40,50]
+// let numsMultiplyByTwo = nums.map((element,index) => {
+    return element * 2
+//})  
+numsMultiplyByTwo                                                    // [ 20, 40, 60, 80, 100 ]
+
+// For single liner:-
+
+nums = [10,20,30,40,50]
+// let numsMultiplyByTwo = nums.map((element,index) => element*2)
+numsMultiplyByTwo                                                    // [ 20, 40, 60, 80, 100 ]
+
+let nums = [10,20,30,40,50]
+let filteredNums = nums.filter((item,index) => item< 40)
+filteredNums                                                         // [ 10, 20, 30 ]
+
+let nums = [10,20,30,40,50]
+nums.reduce((accumulator,current)=> {
+    console.log(accumulator)
+},0)                                                                 // 0, undefined, undefined, undefined
+
+// [] then - ([], undefined.undefined....n)
+// 'a' then - ('a', undefined.undefined....n)
+
+// NOTE:- 
+// Accumulator means combined the value.
+// Current means as same as nums is output.
+
+let nums = [10,20,30,40,50]
+nums.reduce((accumulator,current)=> {
+    accumulator = accumulator+ current
+    accumulator
+},0,)                                                                // 10, NaN, NaN, NaN, NaN
+
+let nums = [10, 20, 30, 40, 50]
+letsum = nums.reduce((accumulator,current) => {
+    accumulator = accumulator + current
+    return accumulator
+}, 0)
+sum                                                                  // 150
+
+
+
+
