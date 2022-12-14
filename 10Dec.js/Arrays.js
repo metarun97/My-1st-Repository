@@ -79,3 +79,80 @@ nums.shift()
 nums                                                                   // [ 20 ,30 ,40 ,50 ]
 nums.unshift(120)
 nums                                                                   // [ 120 ,20 ,30 ,40 ,50 ]
+
+
+// Basic for loop:-
+
+// let nums = [10,20,30,40,50]
+for(let i = 0;i < nums.length;i++){
+    console.log(nums[i])                                               // 10,20, 30, 40, 50
+}
+
+// If youwant to index it:
+
+// let nums = [10,20,30,40,50]
+for(let i = 0;i < nums.length;i++){
+    console.log(i)                                                     //  0, 1, 2, 3, 4                          
+}
+
+// Instead if need to work with index 
+// use for in loop:
+
+// let nums = [10,20,30,40,50]
+for (let index in nums){
+    console.log(index)                                                 //  0, 1, 2, 3, 4  
+}
+
+// let nums = [10,20,30,40,50]
+for (let index in nums){
+    console.log(nums[index])                                           // 10,20, 30, 40, 50
+}
+
+// let nums = [10,20,30,40,50]
+// If you want to work with values use for of loop.
+for(let value of nums){
+    console.log(value)                                                 // 10,20, 30, 40, 50
+}
+
+// NOTE :-
+// If you give (of) you get values.
+// If you give (in) you get index.
+
+// let nums = [10, 20, 30, 40, 50]
+//Empty array
+nums.length = 0
+nums                                                                   // []
+
+// Add and remove the items:-
+// Splice(start index,delete count,item1,item2,.........,itemN)
+// Swiss knife of arrays
+
+let nums = [10,20,30,40,50]
+nums.splice(0,3)                
+nums                                                                   // 40,50
+
+let nums = [10,20,30,40,50]
+nums.splice(1,2)
+nums                                                                   // 10,40,50
+
+// Note :- In parenthesies( first digit is start index and second aone is delete courst).
+
+// Delete the items from index 0 to 20items.
+//nums
+
+let nums = [10,20,30,40,50]
+nums.splice(0,2,'i','am')
+nums                                                                   // [ 'i', 'am', 30, 40, 50 ]
+
+let nums = [10,20,30,40,50]
+let returnItem = nums.splice(1,2,'i','am','a','person')
+returnItem                                                            // 20,30
+
+// Slice method in array:-
+
+// arr.slice(startIndex;endIndex)
+
+let nums = [10,20,30,40,50]
+nums.slice(1,3)
+nums                                                                  // 10, 20, 30, 40, 50
+
