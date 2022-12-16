@@ -160,6 +160,25 @@ priceDoubled
 // })
 priceDoubled
 
+// let itemPrices= {
+    coke : 20,
+//    pizza : 200,
+//   burger : 100
+// }
+// let priceDoubled = Object.entries(itemPrices).map((item) =>{
+//    return [item[0], item[1]* 2]
+// })
+console.log(Object.fromEntries(priceDoubled))
+
+// let itemPrices= {
+    coke : 20,
+ //   pizza : 200,
+//     burger : 100
+// }
+// let priceDoubled = Object.entries(itemPrices).map((item) =>{
+ //  return [item[0], item[1]* 2]
+// })
+priceDoubled
 
 
 
