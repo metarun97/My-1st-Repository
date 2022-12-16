@@ -181,5 +181,222 @@ console.log(Object.fromEntries(priceDoubled))
 priceDoubled
 
 
+// Use object.entries to get an array of key and value pairs.
+// Use aray methods
+// Use object.fromEntries(array) to convert it again back to object.
+
+// let obj = {name: 'john'}
+// let obj2 = {name: 'john'}
+console.log(obj == obj2)
+
+// let obj = {name: 'john'}
+let obj2 = obj
+console.log(obj == obj2)
+
+// Filter:-
+
+// let nums = [10,20,30,40,50]
+// let filteredItems = nums.filter((nums,index) =>{
+
+// })
+filteredItems
+
+
+// let nums = [10,20,30,40,50]
+// let filteredItems = nums.filter((nums,index) =>{
+    return []
+// })
+filteredItems 
+
+
+let nums = [10,20,30,40,50]
+let filteredItems = nums.filter((nums,index) =>{
+    return [nums]
+})
+filteredItems 
+
+// Note:- When return is not given then it gives [] output.
+
+//let nums = [10,20,30,40,50]
+//let filteredItems = nums.filter((nums,index) => nums<40)
+filteredItems 
+
+// Note:- When return is not given then it gives [] output.
+// let nums = [1,2,3,4,5,6,7,8,9,10]
+// let filteredItems = nums.filter((nums,index) => nums%2==0)
+filteredItems 
+
+let users = [
+    {
+    name : 'john',
+    age : 20
+},
+
+{
+    name : 'peter',
+    age : 30
+},
+{
+    name : 'jonathan',
+    age : 35
+},
+{
+    name : 'johnson',
+    age : 50
+}
+]
+users
+
+
+// let users = [
+  //  {
+    name : 'john',
+ //   age : 20
+//},
+
+{
+    name : 'peter',
+    age : 30
+},
+{
+    name : 'jonathan',
+    age : 35
+},
+{
+    name : 'johnson',
+    age : 50
+}
+// ]
+users
+ // let filterusers = users.map((user,inex) => {
+    return user.age < 40
+
+ // })
+ filterusers
+
+ // let users = [
+    //{
+    name : 'john',
+ //   age : 20
+//},
+
+{
+    name : 'peter',
+    age : 30
+},
+{
+    name : 'jonathan',
+    age : 35
+},
+{
+    name : 'johnson',
+    age : 50
+}
+//]
+users
+ let filterusers = users.filter((user,inex) => {
+    return user.age > 40
+
+ })
+ filterusers
+
+// Note:- If user is less then 40 it gives three upper value in output.
+
+// Reduce method:-
+
+const numbers = [10,20,30,40]
+let sum = numbers.reduce((acc,cur) =>{
+    acc
+},0)
+sum
+
+// const numbers = [10,20,30,40]
+// let sum = numbers.reduce((acc,cur) =>{
+    cur
+// },0)
+
+
+
+// const numbers = [10,20,30,40]
+// let sum = numbers.reduce((acc,cur) =>{
+    acc = acc + cur
+    return acc
+//},0)
+sum
+
+// In single line form:-
+
+//const numbers = [10,20,30,40]
+//let sum = numbers.reduce((acc,cur) => acc = acc + cur,0)
+sum
+
+// const numbers = [10,20,30,40]
+// let average = numbers.reduce((avg,value) => {
+    avg
+// },0)
+
+
+ //const numbers = [10,20,30,40]
+// let average = numbers.reduce((avg,value,array) => {
+   value
+// },0)
+avg
+
+
+// const numbers = [10,20,30,40]
+let average = numbers.reduce((acc,curr,currentIndex,array) => {
+  acc
+  curr
+  currentIndex
+  array
+},0)
+average
+
+// const numbers = [10,20,30,40]
+//let average = numbers.reduce((avg,value, array) => {
+   array
+// },0)
+
+// Note:- Underscore is to skip function.
+
+// const numbers = [10,20,30,40]
+// let average = numbers.reduce((avg,value,_,array) => avg + (value)/array.length,0)
+average
+
+// Destructuring:-
+
+// Arrae Destructuring:-
+
+// let arr = [10,20,30,40]
+const [a,b,c,d] = arr
+a
+b
+c
+d
+
+// Object Destructuring:-
+
+// let obj = {name : 'john', age: 20}
+const{name,age} = obj
+name
+age
+
+// Sets:-
+
+// let arr = [10,20,30,40,20,40,30]
+// let uniqueNums = new Set(arr)
+uniqueNums
+
+// Note:- This is neither an array not an object.
+
+// let arr = [10,20,30,40,20,40,30]
+let uniqueNums = [...new Set(arr)]
+uniqueNums
+
+
+
+
+
+
 
 
