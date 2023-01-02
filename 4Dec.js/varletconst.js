@@ -1,4 +1,4 @@
-/ Difference between let,var & const:-
+// Difference between let,var & const:-
 
 //      (INPUT)                                  (OUTPUT)
 
