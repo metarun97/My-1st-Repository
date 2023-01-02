@@ -29,7 +29,7 @@ console.log(a)
 
 // var a = 20
 
-function x(){
+// function x(){
     console.log(a)                             //    (20)                                   
 }
 x() 
