@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>My first web page</title>
+        <meta charset = "utf-8">
+        <meta name="viewreport" content="width=device-width=1.0
+        initial-scale=1.0">
+        <title>Animations</title>
+       <style>
+             div{
+                width:200px;
+                height:200px;
+                border-radius: 50%;
+                background-color: tomato;
+               animation: changeColor;
+               animation-duration: 5s;
+               position: relative;
+               animation-iteration-count: infinite;
+               animation-direction: alternate;
+               animation-timing-function: ease-in-out;
+                /*border: 5px solid black; shorthand property*/
+             }
+            @keyframes changeColor{
+               /*from{
+                background-color: tomato;
+               }
+               to{
+                background-color: aqua;
+               }*/
+               0%{
+                background-color: tomato;
+                left: 0px;
+                top: 0px;
+
+               }
+               25%{
+                background-color: gold;
+                left: 220px;
+                top: 0px;
+               }
+               50%{
+                background-color: purple;
+                left: 220px;
+                top: 220px;
+               }
+              75%{
+                background-color: green;
+                left: 0px;
+                top: 220px;
+               }
+               100%{
+                background-color: tomato;
+                left: 0px;
+                top: 0px;
+               }
+            }
+          </style>
+    
+    </head>
+    <body> 
+      <h1>Animations</h1>
+      <div></div>
+
+    </body>
+</html>
