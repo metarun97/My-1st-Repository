@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>My first web page</title>
+        <meta charset = "utf-8">
+        <meta name="viewreport" content="width=device-width=1.0
+        initial-scale=1.0">
+        <title>Tooltip</title>
+       <style>
+           .tooltip .text
+            {
+            visibility: hidden;
+            width: 150px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 6px;
+            background-color: black;
+            color: whitesmoke;
+            position: absolute;
+
+           
+           }
+           .tooltip:hover .text{
+            visibility: visible;
+           }
+
+           </style>
+          </head>
+    <body> 
+      <h1>Tooltip</h1>
+      <div class="tooltip">Javascript
+        <span class="text">It is a synchronius single threaded language</span>
+      </div>
+
+    </body>
+</html>
