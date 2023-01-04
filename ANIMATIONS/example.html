@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>My first web page</title>
+        <meta charset = "utf-8">
+        <meta name="viewreport" content="width=device-width=1.0
+        initial-scale=1.0">
+        <title>Animation</title>
+       <style>
+            *{
+                margin: 0;
+            }
+            .parent{
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+
+            }
+            .child{
+                width: 50px;
+                height: 50px;
+                background-color: lightblue;
+                box-shadow: 0px 5px 15px
+                black;
+                animation: expand 3s
+                ease-in-out 1s infinite 
+                alternate;
+            }
+            @keyframes expand {
+              0%{
+                width: 50px;
+                height: 50px;
+                background-color: lightblue;
+                }
+                25%{
+                width: 50px;
+                height: 50px;
+                background-color: rgb(96, 208, 245);
+                }
+                50%{
+                width: 50px;
+                height: 250px;
+                background-color: lightblue;
+                }
+                100%{
+                width: 500px;
+                height: 250px;
+                background-color: lightblue;
+                }
+              }
+               
+          </style>
+    
+    </head>
+    <body> 
+      <h1>Animation</h1>
+      <div class="parent">
+        <div class="child" ></div>
+        
+      </div>
+
+    </body>
+</html>
